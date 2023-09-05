@@ -6,13 +6,13 @@ export const ToDoListItem = (props: { toDoItem: ToDo, updateToDo: Function, dele
         <li className="todo-list-item__wrapper">
             <span>{props.toDoItem.text}</span>
             <div className="todo-list-item__buttons">
-                <button 
+                <button
                     className="btn-trash"
-                    onClick={()=> props.deleteToDo(props.toDoItem)}
+                    onClick={() => props.deleteToDo(props.toDoItem)}
                 ></button>
-                <button 
+                <button
                     className={props.toDoItem.isDone ? 'btn-check' : 'btn-uncheck'}
-                    onClick={()=> props.updateToDo(props.toDoItem)}
+                    onClick={() => props.updateToDo(props.toDoItem)}
                 ></button>
             </div>
         </li>

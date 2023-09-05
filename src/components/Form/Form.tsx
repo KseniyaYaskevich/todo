@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './Form.scss'
 
 export const Form = (props: { createNewToDo: Function }) => {
     const [text, setText] = useState<string>('')
 
-    const formSubmit = () => {
+    const formSubmit = (event: React.SyntheticEvent) => {
+        event.preventDefault()
+
         if (text) {
             props.createNewToDo(text)
             setText('')
@@ -15,9 +17,9 @@ export const Form = (props: { createNewToDo: Function }) => {
         <div className="form-wrapper">
             <form action="#" onSubmit={formSubmit}>
                 <label>
-                    <input 
-                        value={text} 
-                        type="text" 
+                    <input
+                        value={text}
+                        type="text"
                         onChange={(e) => setText(e.target.value)}
                     />
                     <button></button>
