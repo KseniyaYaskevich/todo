@@ -1,0 +1,45 @@
+.container {
+    align-self: normal;
+    text-align: center;
+}
+
+.background {
+    background: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif) no-repeat;
+    height: 400px;
+    background-position: center;
+}
+
+.title {
+    font-size: 80px;
+    text-align: center;
+}
+
+.inner {
+    padding-top: 50px;
+}
+
+code {
+    color: #000000;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin: 0 30px 25px;
+
+    span {
+        color: #ffaa00;
+    }
+
+    i {
+        color: #ff0000;
+    }
+
+    em {
+        color: #c300ff;
+        font-style: unset;
+    }
+
+    b {
+        color: #0088ff;
+        font-weight: 500;
+    }
+}
