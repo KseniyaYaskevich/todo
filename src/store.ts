@@ -1,10 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import todoReducer from './feature/todoList'
+import formReducer from './feature/formInput'
 import { loadFromLocalStorage, saveToLocalStorage } from './helpers/storage'
 
 export const store = configureStore({
   reducer: {
-    todoList: todoReducer
+    todoList: todoReducer,
+    formInput: formReducer,
+
   },
   preloadedState: loadFromLocalStorage()
 })
