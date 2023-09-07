@@ -2,7 +2,8 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteAction, validateAction } from '../../feature/formInput'
 import { RootState } from '../../store'
-import './Form.scss'
+import { FormControl, FormBlock, FormField, FormLabel, FormWrapper } from './Form.styled'
+import plusIcon from '../../assets/images/plus.png'
 
 export const Form = (props: { createNewToDo: Function }) => {
     const formInput = useSelector((state: RootState) => state.formInput)
@@ -17,22 +18,22 @@ export const Form = (props: { createNewToDo: Function }) => {
         }
     }
 
-    const handleChange = (event: { preventDefault: () => void; target: any }) => {
+    const handleChange = (event: { target: { value: string } }) => {
         dispatch(validateAction(event.target.value))
     }
 
     return (
-        <div className="form-wrapper">
-            <form action="#" onSubmit={formSubmit}>
-                <label>
-                    <input
-                        value={formInput.value} 
+        <FormWrapper>
+            <FormBlock action="#" onSubmit={formSubmit}>
+                <FormLabel>
+                    <FormField
+                        value={formInput.value}
                         type="text"
                         onChange={handleChange}
                     />
-                    <button></button>
-                </label>
-            </form>
-        </div>
+                    <FormControl icon={plusIcon} />
+                </FormLabel>
+            </FormBlock>
+        </FormWrapper>
     )
 }
