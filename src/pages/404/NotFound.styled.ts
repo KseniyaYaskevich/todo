@@ -12,11 +12,12 @@ export const NotFoundContainer = styled.div<{ icon: string }>`
         left: 0;
         right: 0;
         margin: auto;
-        z-index: -2;
-        width: 50%;
-        height: 50%;
+        z-index: -1;
+        width: auto;
+        height: 35%;
         background: url(${(props) => props.icon}) no-repeat;
-        background-size: cover;
+        background-size: contain;
+        background-position: bottom;
     }
 `
 
@@ -36,7 +37,7 @@ export const NotFoundTitle = styled.h1`
     margin-bottom: 300px;
 `
 
-export const NotFoundImage= styled.img<{ icon: string }>`
+export const NotFoundImage = styled.img<{ icon: string }>`
     position: absolute;
     top: 0;
     right: 0;
