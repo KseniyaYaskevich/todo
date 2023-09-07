@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { deleteAction, validateAction } from '../../feature/formInput'
 import { RootState } from '../../store'
 import { FormControl, FormBlock, FormField, FormLabel, FormWrapper } from './Form.styled'
-import plusIcon from '../../assets/images/plus.png'
+import { iconPlus } from '../../assets/images'
 
 export const Form = (props: { createNewToDo: Function }) => {
     const formInput = useSelector((state: RootState) => state.formInput)
@@ -31,7 +31,7 @@ export const Form = (props: { createNewToDo: Function }) => {
                         type="text"
                         onChange={handleChange}
                     />
-                    <FormControl icon={plusIcon} />
+                    <FormControl icon={iconPlus} />
                 </FormLabel>
             </FormBlock>
         </FormWrapper>
