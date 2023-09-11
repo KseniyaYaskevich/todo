@@ -1,24 +1,9 @@
 import styled from 'styled-components'
 
-export const NotFoundContainer = styled.div<{ icon: string }>`
+export const NotFoundContainer = styled.div`
     position: relative;
     height: calc(100vh - 50px);
     padding: 30px 0;
-
-    &:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        z-index: -1;
-        width: auto;
-        height: 35%;
-        background: url(${(props) => props.icon}) no-repeat;
-        background-size: contain;
-        background-position: bottom;
-    }
 `
 
 export const NotFoundBackground = styled.div`
