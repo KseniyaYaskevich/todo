@@ -20,4 +20,4 @@ export const router = createBrowserRouter([
         path: '*',
         element: <NotFound />
     }
-], {basename: '/todo/'})
+], {basename: '/todo'})
