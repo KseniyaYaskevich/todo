@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/todo/static/css/main.98ec47ca.css",
+    "main.js": "/todo/static/js/main.2d3fa561.js",
+    "static/media/dribbble.gif": "/todo/static/media/dribbble.181c5a6430bcb77324b1.gif",
+    "static/media/moon.svg": "/todo/static/media/moon.8bdd41e10701d54037c74a78080f4344.svg",
+    "static/media/sun.svg": "/todo/static/media/sun.0fe911c1200538223a61ed699c061a04.svg",
+    "index.html": "/todo/index.html",
+    "main.98ec47ca.css.map": "/todo/static/css/main.98ec47ca.css.map",
+    "main.2d3fa561.js.map": "/todo/static/js/main.2d3fa561.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98ec47ca.css",
+    "static/js/main.2d3fa561.js"
+  ]
+}
