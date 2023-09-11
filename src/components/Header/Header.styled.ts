@@ -40,6 +40,9 @@ export const HeaderButton = styled.button`
     margin-left: auto;
     cursor: pointer;
     transition: transform .2s;
+    background-color: white;
+    border: none;
+    padding: 3px 7px;
 
     &::before {
         content: "";
